@@ -1,0 +1,8 @@
+{
+    "name": "01-npm",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "nanoid": "^4.0.1"
+    }
+}
