@@ -9,13 +9,23 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./index.js":
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const nanoid = __webpack_require__(/*! nanoid */ \"./node_modules/nanoid/index.browser.js\");\r\n\r\nconsole.log(\"Hello World!\");\r\nconsole.log(nanoid.nanoid());\n\n//# sourceURL=webpack:///./index.js?");
+eval("const nanoid = __webpack_require__(/*! nanoid */ \"./node_modules/nanoid/index.browser.js\");\r\nconst math = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\r\n\r\nconsole.log(\"Hello World!\");\r\nconsole.log(nanoid.nanoid());\r\nconsole.log(math.add(2,2));\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/math.js":
+/*!*********************!*\
+  !*** ./src/math.js ***!
+  \*********************/
+/***/ ((module) => {
+
+eval("function add(a,b) {\r\n    return a + b;\r\n}\r\n\r\nmodule.exports = {\r\n    add: add,\r\n}\n\n//# sourceURL=webpack:///./src/math.js?");
 
 /***/ }),
 
@@ -101,7 +111,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
 ;

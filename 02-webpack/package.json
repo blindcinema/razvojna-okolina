@@ -1,7 +1,8 @@
 {
     "scripts": {
         "build": "webpack --config webpack.config.js",
-        "build:dev": "webpack --config webpack.config.dev.js"
+        "build:dev": "webpack --config webpack.config.dev.js",
+        "watch": "webpack --watch --config webpack.config.dev.js"
     },
     "devDependencies": {
         "nanoid": "^4.0.1",
